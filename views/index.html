@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/964f8630a1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="/script/script.js"></script>
+    <script>
+        function messageMe(){
+            alert("Your message has been received. Soon I will contact you.")
+        }
+    </script>
 </head>
 <body>
     <div class="scroll-up-btn">
@@ -34,7 +39,7 @@
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Shamim Akhter</div>
-                <div class="text-3">And I'm a <span class="typing">Web Devoloper</span></div>
+                <div class="text-3">And I'm a <span class="typing">Software Devoloper</span></div>
                 <a href="#">Hire me</a>
             </div>
         </div>
@@ -46,11 +51,11 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="image/image.jpg" alt="Image of Shamim">
+                    <img src="/image/image.jpg" alt="Image of Shamim">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Shamim and I'm a <span class="typing-2">Web developer</span></div>
-                    <p>I have been working in this web development project since one year. I am good in frontend technology. </p>
+                    <div class="text">I'm Shamim and I'm a <span class="typing-2">Software developer</span></div>
+                    <p>I have been working as a software engineer since 3 years. I have hands-on experience in frontend and backend technology. </p>
                     <a href="#">Download CV</a>
                 </div>
             </div>
@@ -64,42 +69,42 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <p>I have knowledge of frontend language and backend language as well. In frontend language I know html5, css3, Javascript. For backend I know node js ,express js and mongodb</p>
+                    <p>I have knowledge of frontend language and backend language as well. In frontend language I know html5, css3, Javascript. For backend I know node js ,express js and mongodb. Having good exposure to Git version control system.</p>
                     <a href="#">Read more</a>
                 </div>
                 <div class="column right">
                     <div class="bars">
                         <div class="info">
                             <span>HTML</span>
-                            <span>70%</span>
+                            <span>50%</span>
                         </div>
                         <div class="line html"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>CSS</span>
-                            <span>60%</span>
+                            <span>50%</span>
                         </div>
                         <div class="line css"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>JavaScript</span>
-                            <span>60%</span>
+                            <span>70%</span>
                         </div>
                         <div class="line js"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>Node JS</span>
-                            <span>50%</span>
+                            <span>70%</span>
                         </div>
-                        <div class="line php"></div>
+                        <div class="line node"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>SQL</span>
-                            <span>70%</span>
+                            <span>60%</span>
                         </div>
                         <div class="line mysql"></div>
                     </div>
@@ -142,23 +147,23 @@
             </div>
             <div class="column right">
                 <div class="text">Message me</div>
-                <form action="#">
+                <form action="/" method="POST" enctype="application/x-www-form-urlencoded">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" placeholder="Name" required>
+                            <input type="text" placeholder="Name" name="name" required>
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="Email" required>
+                            <input type="email" placeholder="Email" name="email" required>
                         </div>
                     </div>
                     <div class="field">
-                        <input type="text" placeholder="Subject" required>
+                        <input type="text" placeholder="Subject" name="subject" required>
                     </div>
                     <div class="field textarea">
-                        <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        <textarea cols="30" rows="10" placeholder="Message.." name="message" required></textarea>
                     </div>
                     <div class="button-area">
-                        <button type="submit">Send message</button>
+                        <button type="submit" onclick="messageMe()">Send message</button>
                     </div>
                 </form>
             </div>

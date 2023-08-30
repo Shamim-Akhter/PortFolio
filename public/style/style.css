@@ -164,7 +164,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("image/465703-full-size-colored-smoke-wallpaper-1920x1080-for-mac.jpg") no-repeat center;
+    background: url("/image/465703-full-size-colored-smoke-wallpaper-1920x1080-for-mac.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -316,19 +316,19 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .html::before{
-    width: 90%;
-}
-.skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
-    width: 80%;
-}
-.skills-content .right .php::before{
     width: 50%;
 }
-.skills-content .right .mysql::before{
+.skills-content .right .css::before{
+    width: 50%;
+}
+.skills-content .right .js::before{
     width: 70%;
+}
+.skills-content .right .node::before{
+    width: 70%;
+}
+.skills-content .right .mysql::before{
+    width: 60%;
 }
 
 
